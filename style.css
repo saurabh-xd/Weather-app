@@ -11,7 +11,7 @@ body{
 .card{
   width: 90%;
   max-width: 470px;
-  background: linear-gradient(135deg,#00feba,#5b548a);
+  background: linear-gradient(135deg, #5f2c82, #49a09d);
   color: #fff;
   margin: 100px auto 0;
   border-radius: 20px;
@@ -98,5 +98,22 @@ body{
   display: none;
 }
 
+.search button {
+  transition: background 0.3s ease;
+}
+.search button:hover {
+  background: #5b548a;
+}
+.search button:hover img {
+  filter: brightness(0) invert(1); /* Makes the icon white */
+}
 
+.search input {
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
 
+.search input:focus {
+  border: 2px solid #032596; 
+  box-shadow: 0 0 8px rgba(91, 84, 138, 0.5); 
+}
